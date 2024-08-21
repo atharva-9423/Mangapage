@@ -148,6 +148,7 @@ body {
   color: #FFF;
   border-radius: 6px;
   font-weight: 500;
+  text-decoration: none;
   cursor: pointer;
   background: #0294FF;
   border: 2px solid transparent;
