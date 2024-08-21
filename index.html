@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Slider HTML and CSS by AbdulDev</title>
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Linking SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+  <div class="navigation">
+    <ul>
+      <li class="list active">
+        <a href="#">
+          <span class="icon"><ion-icon name="home-outline"></ion-icon>
+          </span>
+          <span class="text">Home</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="https://www.mediafire.com/file/g4dfox7pzf07r3x/IndiManga_%25281%2529.apk/file">
+          <span class="icon"><ion-icon name="phone-portrait-outline"></ion-icon>
+          </span>
+          <span class="text">App</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="http://indimangaabout.wordpress.com">
+          <span class="icon"><ion-icon name="information-circle-outline"></ion-icon>
+          </span>
+          <span class="text">About</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="https://t.me/indimangachat">
+          <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon>
+          </span>
+          <span class="text">Contact</span>
+        </a>
+      </li>
+      <div class="indicator"></div>
+    </ul>
+  </div>
+  
+  <script>
+    const list = document.querySelectorAll('.list');
+    function activeLink(){
+      list.forEach((item) =>
+      item.classList.remove('active'));
+      this.classList.add('active');
+    }
+    list.forEach((item) =>
+    item.addEventListener('click',activeLink));
+  </script>
+  
+  
+  <script>
+    const list = document.querySelectorAll('.list');
+    function activeLink(){
+      list.forEach((item) =>
+      item.classList.remove('active'));
+      this.classList.add('active');
+    }
+    list.forEach((item) =>
+    item.addEventListener('click',activeLink))
+  </script>
+  
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <header class="header">
+   <a href="#" class="logo">IndiManga</a>
+  </header>
+  
+  <div class="container swiper">
+    <div class="slider-wrapper">
+      <div class="card-list swiper-wrapper">
+        <div class="card-item swiper-slide">
+          <img decoding="async" src="berserk.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">Berserk</h2>
+          <p class="user-profession">5★</p>
+          <a href="https://indimanga.xyz/manga/berserk-manga-hindi-sub/">
+            <button class="message-button">Abhi Padhe</button>
+            </a>
+        </div>
+
+        <div class="card-item swiper-slide">
+          <img decoding="async" src="jujika.jpg" alt="User Image" class="jujika">
+          <h2 class="jujika-name">Jujika No Rokunin</h2>
+          <p class="user-profession">5★</p>
+          <a href="https://indimanga.xyz/manga/juujika-no-rokunin/">
+            <button class="message-button">Abhi Padhe</button>
+          </a>
+        </div>
+
+        <div class="card-item swiper-slide">
+          <img decoding="async" src="frieren.jpg" alt="User Image" class="frieren-image">
+          <h2 class="frieren-name">Sousou No Frieren</h2>
+          <p class="user-profession">5★</p>
+          <a href="https://indimanga.xyz/manga/sousou-no-frieren/">
+          <button class="message-button">Abhi Padhe</button>
+          </a>
+        </div>
+
+        <div class="card-item swiper-slide">
+          <img decoding="async" src="tokyo ghoul.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">Tokyo Ghoul</h2>
+          <p class="user-profession">5★</p>
+          <a href="https://indimanga.xyz/manga/tokyo-ghoul-manga-hindi-sub/"
+          <button class="message-button">Abhi Padhe</button>
+          </a>
+        </div>
+
+        <div class="card-item swiper-slide">
+          <img decoding="async" src="boy in girls.jpg" alt="User Image" class="girls-image">
+          <h2 class="girls-name">The Boy In All Girls School</h2>
+          <p class="user-profession">5★</p>
+          <a href="https://indimanga.xyz/manga/boy-in-all-girls-school-manhwa-hindi-sub/"
+          <button class="message-button">Abhi Padhe</button>
+          </a>
+        </div>
+
+        <div class="card-item swiper-slide">
+          <img decoding="async" src="hideout.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">Hideout</h2>
+          <p class="user-profession">5★</p>
+          <a href="https://indimanga.xyz/manga/hideout/"
+          <button class="message-button">Abhi Padhe</button
+          </a>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-slide-button swiper-button-prev"></div>
+      <div class="swiper-slide-button swiper-button-next"></div>
+    </div>
+  </div>
+
+  <!-- SwiperJS Script Link -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Custom JS Script Link -->
+  <script src="main.js"></script>
+</body>
+</html>
