@@ -306,8 +306,8 @@ body {
 }
 
 .home-content h1 {
-  position: relative;
-  left: 75px;
+  position: absolute;
+  left: 81px;
   top: 80px;
   font-size: 21px;
   font-weight: 700;
